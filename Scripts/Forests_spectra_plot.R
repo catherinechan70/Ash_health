@@ -1,5 +1,5 @@
 ### SCRIPTS TO PLOT SAMPLE SPECTRA 
-### to easily plot portions of spectrum and spectra of interest 
+## to easily plot portions of spectrum and spectra of interest 
 library(tidyverse)
 library(sp)
 library(rgdal)
