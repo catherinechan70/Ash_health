@@ -1,0 +1,143 @@
+---
+title: "ash_fieldspec_processing"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+###############################################################Creates a A spectral library object of all the scans collected in Alaksa in 2018 and 2019########################################################
+
+########################################SED to RDS####################################
+library(spectrolab)
+library(tidyverse)
+library(dplyr)
+setwd("C://Users//catherine.chan//Desktop//Thesis Data//Ash Trees")
+
+####Read in data as spectra
+
+Baxter25Spectra <- read_spectra("E://Chan_Thesis_Missions//PSR Scans//Blueberries_7_25_2019//Baxter",
+                                 format="sed")
+
+tree_samples <- read_spectra("C://Users//catherine.chan//Desktop//Thesis Data//Ash Trees//Exports//Atkinson",
+                                 format="txt")
+
+
+
+##Fix Names 
+names(Airport25Spectra)<-gsub(".sed","",names(Airport25Spectra))
+names(Baxter25Spectra)<-gsub(".sed","",names(Baxter25Spectra))
+
+
+###Create Metadata
+Airport25Spectra_metadata<-as.data.frame(names(Airport25Spectra))
+names(Airport25Spectra_metadata)[1]<-"ScanID"
+
+Baxter25Spectra_metadata<-as.data.frame(names(Baxter25Spectra))
+names(Baxter25Spectra_metadata)[1]<-"ScanID"
+
+
+###Create column PFT and column area
+Airport25Spectra_metadata<-Airport25Spectra_metadata%>%mutate(PFT=substr(Airport25Spectra_metadata$ScanID,start = 1,stop = 6))
+Airport25Spectra_metadata$area<- "Airport25"
+
+Baxter25Spectra_metadata<-Baxter25Spectra_metadata%>%mutate(PFT=substr(Baxter25Spectra_metadata$ScanID,start = 1,stop = 6))
+Baxter25Spectra_metadata$area<- "Baxter25"
+
+##Set metadata
+meta(Airport25Spectra) = data.frame(Airport25Spectra_metadata, stringsAsFactors = FALSE)
+
+meta(Baxter25Spectra) = data.frame(Baxter25Spectra_metadata, stringsAsFactors = FALSE)
+
+
+##save spectra (Raw)
+saveRDS(Airport25Spectra      ,"E://Chan_Thesis_Missions//PSR Scans//Outputs//0725//Airport25Spectra.rds"      )
+
+saveRDS(Baxter25Spectra      ,"E://Chan_Thesis_Missions//PSR Scans//Outputs//0725//Baxter25Spectra.rds"      )
+
+#############
+
+##Reads in a spectral object for each area sampled in Alaksa for the years 2018-2019...all object have bands from 350:2500nm and metadata being ScanaID,PFT and Area
+Airport25Spectra          <-readRDS("E://Chan_Thesis_Missions//PSR Scans//Outputs//0725//Airport25Spectra.rds"       )##SPECTRAL OBJECT WITH 41 SAMPLES
+
+Baxter25Spectra       <-readRDS("E://Chan_Thesis_Missions//PSR Scans//Outputs//0725//Baxter25Spectra.rds"       )##SPECTRAL OBJECT WITH 46 SAMPLES
+
+
+##If we combine these spectral objects we should get a spectral library of 1985 samples
+##This function combines the list of spectral objects above....spectral object with 1985 samples, bands from 350:2500nm and metadata being ScanaID,PFT and Area
+Blueberry0725SpecLib<-Reduce(spectrolab::combine,list(Airport25Spectra          
+                                                   ,Baxter25Spectra))
+
+##Now we want to convert our spectral object to a dataframe to build our spectral library...dataframe with 1985 rows and 2154 cols
+Blueberry0725SpecLib<-as.data.frame(Blueberry0725SpecLib)%>%dplyr::select(-sample_name)
+
+
+##Now we want to add columns that represent the species and funcional groups, PFT_2 and PFT_3 respectively. 
+##Add column PFT_2 (SPECIES) to spectral library
+Blueberry0725SpecLib$ScanID[Blueberry0725SpecLib$area=="Airport25"]<-"Irrigated"
+Blueberry0725SpecLib$ScanID[Blueberry0725SpecLib$area=="Baxter25"]<-"Non-Irrigated"
+
+
+###Add column PFT_3 (Couser response variables)
+       #Blueberry0725SpecLib$PFT_3[Blueberry0725SpecLib$PFT=="A"]<-"?"
+      #Blueberry0725SpecLib$PFT_3[Blueberry0725SpecLib$PFT=="B"]<-"?"
+
+
+##Lets add more details to our spectral library by adding  frequency columns
+##This frequency value represents the number of scans per species and the number of scans per functional group
+##Lets start by creating a new dataframe with a frequency column for species and one for functional group
+##Where PFT_2 represents species and PFT_3 represents functional groups
+Blueberry0725SpecLibScanID_freqTab<-as.data.frame(table(Blueberry0725SpecLib$ScanID))##SPECIES FREQ TABLE
+
+#Blueberry0725SpecLibPFT3_freqTab<-as.data.frame(table(Blueberry0725SpecLib$))##Func Group FREQ TABLE
+
+
+###lets create a df from our spectral library to be saved
+Blueberry0725SpecLib_df<-Blueberry0725SpecLib
+
+#We want to create dataframes that have all the scans of each functional groups
+##This can be used to make graphs of all the species within each functional group
+Blueberry0725SpecLib_Irrigated   <-subset(Blueberry0725SpecLib, ScanID=="Irrigated")
+Blueberry0725SpecLib_nonirrigated      <-subset(Blueberry0725SpecLib,ScanID=="Non-Irrigated")
+
+
+##Now we want to convert our new spectral library back to a spectral object to be saved
+#First Remove metadata from spectral library
+Blueberry0725SpecLib_meta<-Blueberry0725SpecLib[,c(1:7)]
+
+###Create alskaspeclib without meta
+Blueberry0725SpecLib_spectra<-Blueberry0725SpecLib[,c(-1:-7)]
+
+##convert to a .rds file....Spectral object with 1975 samples with spectral range of 350-2500nm
+Blueberry0725SpecLib<-spectrolab::as.spectra(Blueberry0725SpecLib_spectra)
+##str(alaskaSpecLib_spectra)
+
+##bind metadata...final producct is a spectral object with 1975 samples with spectral range of 350-2500nm and  6 variables being metadata
+meta(Blueberry0725SpecLib)<-data.frame(Blueberry0725SpecLib_meta, stringsAsFactors = FALSE)
+
+##Now lets smooth and resample our new spectral library so we can perform other analysis later
+#alaskaSpecLib_smooth<-smooth(alaskaSpecLib)
+
+#resampling every 5 and 10nm
+#alaskaSpecLib_smooth_05nm<-spectrolab::resample(alaskaSpecLib_smooth, seq (350,2500,5 ))
+#alaskaSpecLib_smooth_10nm<-spectrolab::resample(alaskaSpecLib_smooth, seq (350,2500,10))
+
+
+##Now lest save our new spectral library and all the necessary objects that were created
+saveRDS(Blueberry0725SpecLib            ,"E://Chan_Thesis_Missions//PSR Scans//Outputs//0725//Blueberry0725SpecLib.rds"
+      )
+saveRDS(Blueberry0725SpecLib_df          ,"E://Chan_Thesis_Missions//PSR Scans//Outputs//0725//Blueberry0725SpecLib_df.csv"
+      )
+
+#saveRDS(alaskaSpecLib_smooth     ,"Outputs/1_Field_spec/1_Processing/alaskaSpecLib_smooth.rds"     )
+#saveRDS(alaskaSpecLib_smooth_05nm,"Outputs/1_Field_spec/1_Processing/alaskaSpecLib_smooth_05nm.rds")
+#saveRDS(alaskaSpecLib_smooth_10nm,"Outputs/1_Field_spec/1_Processing/alaskaSpecLib_smooth_10nm.rds")```
+
+## R Markdown
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+
