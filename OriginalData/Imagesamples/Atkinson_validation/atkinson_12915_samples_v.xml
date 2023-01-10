@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="atkin_232D_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14240073 42.81845995 -71.1423994 42.81845866 -71.14239882 42.81845817 -71.14239982 42.81845725 -71.14239923 42.81845657 -71.14239982 42.81845553 -71.14239982 42.8184551 -71.14240098 42.81845608 -71.14240165 42.81845645 -71.14240098 42.81845731 -71.14240073 42.81845878 -71.14240123 42.81845878 -71.14240182 42.81845946 -71.14240173 42.81846007 -71.14240073 42.81845995
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_230D_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14259951 42.8184272 -71.14259951 42.81842882 -71.14259797 42.81842798 -71.14259524 42.818427 -71.1425941 42.81842582 -71.14259657 42.81842464 -71.14259851 42.81842489 -71.14259964 42.81842582 -71.14260071 42.81842587 -71.14260071 42.81842592 -71.14260044 42.81842646 -71.14259977 42.81842656 -71.14259951 42.8184272
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_228D_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14257103 42.81835175 -71.14257007 42.81835113 -71.14257007 42.81834999 -71.14256996 42.8183483 -71.14257097 42.81834787 -71.14257231 42.8183479 -71.14257263 42.81834857 -71.14257338 42.81834877 -71.14257391 42.81834975 -71.14257444 42.81834975 -71.1425737 42.81835073 -71.14257242 42.81835073 -71.14257129 42.81835101 -71.14257103 42.81835175
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

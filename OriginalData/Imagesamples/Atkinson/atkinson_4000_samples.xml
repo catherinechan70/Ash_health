@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="atkin_201D_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.13651254 42.81786828 -71.13651138 42.81786903 -71.13651019 42.81786911 -71.13650964 42.81786773 -71.13651036 42.81786673 -71.13651116 42.81786593 -71.13651019 42.81786518 -71.13651063 42.81786421 -71.13651185 42.81786465 -71.13651276 42.81786543 -71.1365142 42.81786587 -71.13651495 42.81786701 -71.13651409 42.81786903 -71.1365129 42.81786864 -71.13651254 42.81786828
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_202_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.13706825 42.81792174 -71.13706884 42.81791951 -71.13706714 42.81791739 -71.13706486 42.81791659 -71.13706295 42.81791473 -71.13705929 42.81791537 -71.13705595 42.81791686 -71.13705552 42.81791914 -71.13705075 42.81792402 -71.13705568 42.81792906 -71.13706258 42.81793049 -71.13706496 42.81792518 -71.13706793 42.81792237 -71.13706825 42.81792174
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_203_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.13717074 42.81801857 -71.13716935 42.81802016 -71.13716696 42.8180189 -71.1371657 42.81801691 -71.13716616 42.81801413 -71.13716928 42.81801452 -71.137171 42.81801512 -71.137171 42.81801651 -71.1371708 42.81801811 -71.13717074 42.81801857
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

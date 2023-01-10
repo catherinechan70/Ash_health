@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="atkin_228D_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14257285 42.81835666 -71.14257478 42.8183554 -71.14257564 42.81835341 -71.14257365 42.81835215 -71.14257212 42.81835142 -71.14257133 42.81835407 -71.14256854 42.818355 -71.14256788 42.81835732 -71.14256994 42.81835885 -71.14257179 42.81835878 -71.14257279 42.81835699 -71.14257285 42.81835666
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_230D_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14260495 42.81843033 -71.14260487 42.81842914 -71.14260356 42.81842883 -71.14260267 42.8184271 -71.14260106 42.8184272 -71.1426007 42.81842864 -71.14260189 42.81843012 -71.14260367 42.81843188 -71.14260504 42.81843157 -71.14260515 42.81843101 -71.14260495 42.81843033
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_232D_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14239561 42.81846107 -71.1423939 42.8184607 -71.14239344 42.81845946 -71.14239253 42.81845794 -71.14239244 42.8184562 -71.14239453 42.8184562 -71.1423947 42.81845703 -71.14239557 42.81845794 -71.14239666 42.81845863 -71.142398 42.81845944 -71.14239865 42.81846005 -71.14239765 42.81846148 -71.14239581 42.81846102 -71.14239561 42.81846107
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

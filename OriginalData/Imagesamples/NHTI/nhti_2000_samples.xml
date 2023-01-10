@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="nhti_12D_WA" color="255,0,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.53171569 43.2199578 -71.53171202 43.21995815 -71.53170995 43.21996094 -71.53170979 43.21996176 -71.53171186 43.21996164 -71.53171505 43.21996059 -71.53171776 43.21996106 -71.53171824 43.21996316 -71.53171712 43.21996455 -71.53171648 43.21996584 -71.53171776 43.21996619 -71.53171776 43.2199663 -71.53171919 43.21996502 -71.53171919 43.21996153 -71.53171919 43.21996059 -71.53171824 43.21995931 -71.53171617 43.21995873 -71.53171569 43.2199578
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>
