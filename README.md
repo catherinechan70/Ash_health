@@ -11,14 +11,14 @@ Sample numbers under 100 are associated with location ‘New Hampshire Technical
 1.	*ash_extraction_furthertest1.R* script contains a loop that extracts all samples from the remote sensing image. The loop must be run for each image. All polygon extractions are saved as their own .tif file. These are stored under **ImageExtractions** under **OriginalData** and were all manually renamed to their sample number. This process was also conducted for shadow samples which are under **OriginalData**. 
 
 2.	Any of the following 2 scripts   
-*ashhealth_data_arrange.R* (converting image data to points and arranging by category)
+*ashhealth_data_arrange.R* (converting image data to points and arranging by category)  
 *ash_shadow_data_arrange.R* (converting image data to points and arranging by category)
 
 3.	*Spectral_classifier_ranger.R*  
 Creates model and generates variable importance information to differentiate between shadow and non-shadow
 
 4.	*Image_classifier.R*  
-Classifies the image as shadow or non-shadow
+Classifies the image as shadow or non-shadow  
 Requires function *HyperspecGenFunctionRanger.R* and *LandCoverEstimator.R* both in folder **Functions**.
 
 5.	*TestingScript.R*  
