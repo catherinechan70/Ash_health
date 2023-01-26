@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="nhti_2489_gra_1" color="0,128,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.53191691 43.2191781 -71.53191006 43.2191831 -71.53190291 43.21917992 -71.53189793 43.21917559 -71.53189855 43.21916877 -71.53189949 43.2191608 -71.53191037 43.21916171 -71.53191598 43.21917332 -71.53191691 43.2191781
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="nhti_2489_gra_2" color="0,128,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.53236 43.22015608 -71.53235925 43.2201599 -71.53235427 43.220165 -71.53234755 43.22016336 -71.53234432 43.22016026 -71.53234332 43.22014898 -71.53234258 43.22014352 -71.5323478 43.22014261 -71.53235477 43.22014734 -71.53235651 43.22015298 -71.53235925 43.22015408 -71.53236 43.22015608
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="nhti_2489_gra_8" color="0,128,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.53195452 43.22024996 -71.53195452 43.22022463 -71.53199888 43.22023308 -71.53199584 43.22025307 -71.53196485 43.22025307 -71.53195452 43.22024996
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

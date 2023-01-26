@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="hook_14456_dir_3" color="255,175,29">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.45998958 43.10890796 -71.45998529 43.10891881 -71.45995682 43.10891281 -71.45995682 43.1089051 -71.45997047 43.10890024 -71.45998451 43.1088951 -71.45998919 43.10890338 -71.45998958 43.10890796
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

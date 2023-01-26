@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="hook_12456_dir_1" color="240,155,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.46194729 43.10904683 -71.4619351 43.10908433 -71.4619223 43.10908746 -71.46192352 43.10907138 -71.46193632 43.10904638 -71.46194302 43.10903299 -71.46194851 43.10903701 -71.46194729 43.10904683
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="hook_12456_dir_2" color="255,175,29">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.4618376 43.10927006 -71.46182968 43.10926872 -71.46183699 43.10925533 -71.4618443 43.10924193 -71.46185344 43.10922765 -71.46186685 43.10921961 -71.46186624 43.10923122 -71.46186198 43.10923568 -71.46184613 43.10926024 -71.46184065 43.10926783 -71.4618376 43.10927006
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

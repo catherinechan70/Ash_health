@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="atkin_203_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.13717501 42.81801708 -71.13717501 42.81801716 -71.13717414 42.81801756 -71.1371723 42.81801684 -71.13717317 42.81801612 -71.13717295 42.81801469 -71.1371723 42.81801397 -71.13717447 42.81801374 -71.1371749 42.81801334 -71.13717641 42.81801334 -71.13717739 42.81801429 -71.13717609 42.81801517 -71.13717512 42.81801644 -71.13717501 42.81801708
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_202_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.13705047 42.81792305 -71.13704712 42.81792201 -71.13704495 42.81792209 -71.13704658 42.81792018 -71.13704885 42.81791835 -71.13704841 42.81791644 -71.13704896 42.81791532 -71.13705177 42.81791572 -71.13705447 42.81791708 -71.13705447 42.81791859 -71.13705274 42.81791938 -71.13705166 42.81792082 -71.13705058 42.81792249 -71.13705047 42.81792305
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_201D_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.1365098 42.81786444 -71.1365098 42.81786448 -71.13650827 42.81786448 -71.1365082 42.81786326 -71.13650793 42.81786188 -71.13650726 42.81786046 -71.13650847 42.81786006 -71.13650933 42.81785967 -71.13651033 42.81786026 -71.13651133 42.81786134 -71.136509 42.81786188 -71.13650927 42.81786306 -71.13651027 42.8178638 -71.13651 42.81786404 -71.1365098 42.81786444
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

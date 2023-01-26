@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="atkin_201_WA_V" color="0,0,255">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.13650628 42.8178662 -71.13650528 42.81786455 -71.13650295 42.81786295 -71.13650245 42.81786135 -71.13650436 42.81786056 -71.13650603 42.81786099 -71.13650645 42.81786191 -71.13650661 42.8178632 -71.1365077 42.81786412 -71.13650686 42.81786522 -71.13650653 42.81786577 -71.13650653 42.81786584 -71.13650628 42.8178662
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

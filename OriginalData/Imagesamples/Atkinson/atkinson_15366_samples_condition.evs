@@ -1,0 +1,27 @@
+{
+    "linestyle": 0,
+    "color_table": "Solid Color",
+    "current_attribute": "Condition_",
+    "attribute_values": [
+        {
+            "fill_color": [249, 109, 32],
+            "line_color": [249, 109, 32],
+            "value": "1"
+        },
+        {
+            "fill_color": [240, 0, 0],
+            "line_color": [240, 0, 0],
+            "value": "4"
+        },
+        {
+            "fill_color": [255, 255, 29],
+            "line_color": [255, 255, 29],
+            "value": "3"
+        }
+    ],
+    "schema": "EnviVectorStyle_1.0",
+    "thickness": 5.0000000,
+    "color": "36,36,36",
+    "fill_color": "72,255,72",
+    "fill_interior": 1
+}

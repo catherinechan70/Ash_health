@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="hook_2575_dir_4" color="255,175,29">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.46156887 43.11126031 -71.46155522 43.11125774 -71.46154547 43.1112526 -71.4615482 43.11124917 -71.46156614 43.11125545 -71.46156887 43.11126031
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="hook_2575_dir_5" color="240,155,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.46183592 43.11129095 -71.46183468 43.11129667 -71.46182937 43.11129507 -71.46182688 43.11129049 -71.46182532 43.11128684 -71.46182937 43.11128638 -71.46183156 43.11129049 -71.46183405 43.11129141 -71.46183592 43.11129095
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="hook_2575_dir_6" color="240,155,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.46188128 43.11153253 -71.46188 43.11153452 -71.46187681 43.11153546 -71.46187601 43.11153651 -71.4618701 43.11153335 -71.46186802 43.11153113 -71.4618693 43.11153078 -71.46187169 43.11153078 -71.46187473 43.11153113 -71.46187489 43.11152984 -71.46187217 43.11152832 -71.46187601 43.11152856 -71.46187808 43.11152996 -71.46188 43.11153136 -71.46188 43.11153148 -71.46188128 43.11153253
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>

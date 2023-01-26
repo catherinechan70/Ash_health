@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RegionsOfInterest version="1.1">
+  <Region name="atkin_212_WO" color="0,255,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14068776 42.81859581 -71.14068767 42.81859728 -71.14068598 42.81859841 -71.14068335 42.81859862 -71.14068235 42.81859724 -71.14068179 42.8185959 -71.14067997 42.81859633 -71.14067855 42.81859391 -71.14067816 42.81859227 -71.14068153 42.81859231 -71.14068283 42.81859382 -71.14068508 42.81859421 -71.14068668 42.81859529 -71.14068719 42.81859564 -71.14068776 42.81859581
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+  <Region name="atkin_213_RO" color="0,255,0">
+    <GeometryDef>
+      <CoordSysStr>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</CoordSysStr>
+      <Polygon>
+        <Exterior>
+          <LinearRing>
+            <Coordinates>
+-71.14078381 42.81856784 -71.14078473 42.81856668 -71.14078395 42.81856505 -71.14078296 42.81856447 -71.1407811 42.81856505 -71.14077875 42.81856624 -71.14077933 42.81856831 -71.14078177 42.81857021 -71.14078405 42.81856974 -71.14078378 42.81856801 -71.14078381 42.81856784
+            </Coordinates>
+          </LinearRing>
+        </Exterior>
+      </Polygon>
+    </GeometryDef>
+  </Region>
+</RegionsOfInterest>
